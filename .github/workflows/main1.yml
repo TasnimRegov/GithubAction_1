@@ -4,9 +4,9 @@ name: First Github Action Demo   # the name of workflow files
 'on': push                       # whenever something will be pushed to this repo will trigger wflw files
 # on: workflow_dispatch          #  allow to run the workflow manually (go and trigger it when i need)
 
-jobs:                            # 
+jobs:                            # collection of steps to do
   first_action:                  # The name of the JOBS in action
     runs-on: ubuntu-latest       # run the ubuntu system
-    steps:
+    steps:                       # Action will be taken 
       - name: print function
         run: echo "U MADE IT TASNIM!!!"  # will print the echo
