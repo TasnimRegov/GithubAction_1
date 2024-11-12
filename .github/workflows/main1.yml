@@ -1,5 +1,5 @@
 name: First Github Action Demo
-on: workflow_dispatch
+'on': push
 
 jobs:
   say_hello:
