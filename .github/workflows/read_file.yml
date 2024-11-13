@@ -1,0 +1,18 @@
+name: Sec Git Action Demo
+on: 
+  workflow_dispatch:
+
+jobs:
+  sec_action:
+    name: "LETS HAVE A TRY!!"    #workflow named
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "HI THERE!"       #
+      # USES ACTIONs (Github unlike gitlab, not checkout repo into runner when it start.
+      # If want access to repo code NEED to use the CHECKOUT action to check that repo in the files system.
+      - uses: actions/checkout@v3
+      - run: cat ./.github/workflows/list.txt    # files directory
+        name: Display the content in the list.txt files
+      - run: echo "Action Complete!"
+        
+  
