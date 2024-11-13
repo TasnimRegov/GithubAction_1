@@ -1,0 +1,5 @@
+LIST OF MENU:
+1. Latte
+2. Mocha
+3. Cappuccino
+4. Americano
