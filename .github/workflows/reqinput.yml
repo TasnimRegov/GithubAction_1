@@ -1,0 +1,20 @@
+name: ThirdAction_input
+on:
+  workflow_dispatch:
+  # INPUT only applicable when using this (workflow_dispatch//workflow_call)
+  # the input will required/request before manually run the workflow
+    inputs:
+      # input values will reference in the Jobs steps
+      thename:
+        description: 'What is your name?'
+        required: true
+
+jobs:
+  third_action:
+    name: "Receive Input"
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "HELLO THERE, ${{ inputs.thename }}!"
+      - run: echo "Finished"
+      
+  
