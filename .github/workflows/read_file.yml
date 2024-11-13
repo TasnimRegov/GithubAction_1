@@ -1,10 +1,10 @@
-name: Sec Git Action Demo
+name: SecAction_readfiles
 on: 
   workflow_dispatch:
 
 jobs:
   sec_action:
-    name: "LETS HAVE A TRY!!"    #workflow named
+    name: "Read_files_action"    #workflow named
     runs-on: ubuntu-latest
     steps:
       - run: echo "HI THERE!"       #
